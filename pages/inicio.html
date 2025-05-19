@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/imgHTML/logohtml.png" type="image/png">
+    <title>Inicio Sesion</title>
+    <link rel="stylesheet" href="/css/styleFormulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="logo">
+        
+        <a href="/index.html"><p>El Refugio de los Libros</p></a>
+    </div>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="false">
+        <div class="singup">
+            <form action="/register" novalidate>
+                <label class="label" for="chk" aria-hidden="true">Sing up</label>
+                <div class="input-container">
+                    <input id="name" class="input" type="text" name="txt" placeholder="User name" required>
+                    <span class="input-hint">Mínimo 3 caracteres</span>
+                </div>
+                <div class="input-container">
+                    <input id="email" class="input" type="text" name="email" placeholder="Email" required>
+                    <span class="input-hint">Formato: usuario123@g.educaand.es</span>
+                </div>
+                <div class="input-container">
+                    <input id="password" class="input" type="password" name="password" placeholder="Password" required>
+                    <span class="input-hint">8-16 chars, 1 mayúscula, 1 minúscula, 1 número</span>
+                </div>
+                <div class="input-container">
+                    <input id="confirm_password" class="input" type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    <span class="input-hint">Las contraseñas deben coincidir</span>
+                </div>
+                <label id="box">Acepto la política de privacidad<input id="box1" type="checkbox" class="mi-checkbox"><span class="checkmark-round"></span></label>
+                <button id="singup">Sing up</button>
+            </form>
+        </div>
+        <div class="login">
+            <form action="/login" novalidate>
+                <label class="label" for="chk" aria-hidden="true">Login</label>
+                <div class="input-container">
+                    <input id="login_email" class="input" type="text" name="email" placeholder="Email Or User name" required>
+                </div>
+                <div class="input-container">
+                    <input id="login_password" class="input" type="password" name="pswd" placeholder="Password" required>
+                </div>
+                <button id="login-btn">Login</button>
+                <p>Don't have account <a href="#">Create account</a>.</p>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/validacion.js"></script>
+</body>
+</html>
